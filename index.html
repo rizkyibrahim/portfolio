@@ -2,14 +2,140 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Muhammad Rizky Ibrahim</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Muhammad Rizky Ibrahim</title>
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <script src="/js/app.js"></script>
 </head>
 
 <body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <ul class="link-group">
+      <li class="link active"><a href="#">home</a></li>
+      <li class="link"><a href="#project">projects</a></li>
+      <li class="link"><a href="#about">about</a></li>
+      <li class="link"><a href="#contact">contact</a></li>
+    </ul>
+  </nav>
 
+  <!-- Hero Section -->
+  <section class="home-section active">
+    <h1 class="hero-heading">
+      hello, i am
+      <br />
+      Rizky Ibrahim
+    </h1>
+    <img src="img/me/profile.jpg" class="home-img" alt="" />
+  </section>
+
+  <!-- Project Section -->
+  <section class="project-section active">
+    <h1 class="project-heading">My Projects</h1>
+    <div class="project-container">
+      <div class="project-card">
+        <img src="img/project/1.jpeg" class="project-img" alt="LPK-LKP INDERA" />
+        <div class="project-content">
+          <h1 class="project-title">LPK-LKP INDERA</h1>
+          <p class="project-info">
+            Project ini dibuat agar memudahkan dan mempercepat kinerja layanan
+            Kursus Mengemudi di LPK-LKP INDERA Magelang
+          </p>
+          <div class="project-btn-grp">
+            <button class="project-btn github"
+              onclick="window.location.href='https://github.com/rizkyculture/tugas-akhir'">
+              Github
+            </button>
+            <button class="project-btn live" onclick="window.location.href='https://lpk-lkpindera.com/'">
+              Live Project
+            </button>
+            <!-- https://lpk-lkpindera.com/ -->
+          </div>
+        </div>
+      </div>
+      <div class="project-card" id="project">
+        <img src="img/project/2.jpeg" class="project-img" alt="LPK-LKP INDERA" />
+        <div class="project-content">
+          <h1 class="project-title">GMF PLB REPORT</h1>
+          <p class="project-info">
+            Project ini diperuntukan membuat laporan barang keluar masuk
+            BEACUKAI yang digunakan sampai sekarang oleh PT. GMF AeroAsia
+          </p>
+          <div class="project-btn-grp">
+            <button class="project-btn github" onclick="javascript:void(0)">
+              Github
+            </button>
+            <button class="project-btn live" onclick="window.location.href='https://dev-plb.gmf.cloud/login'">
+              Live Project
+            </button>
+            <!-- https://lpk-lkpindera.com/ -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section active" id="about">
+    <div class="about">
+      <div class="about-img-container">
+        <img src="img/me/profile.jpg" class="about-img" alt="" />
+        <button class="download-cv-btn">Download CV</button>
+      </div>
+      <p class="about-info">
+        Saya memiliki kemampuan Programming PHP dan Javascript. Memiliki Pengalaman
+        magang sebagai IT Support (Infra) di PT. Mega Finance dan
+        WebProgrammer di PT. Jaya Teknologi International yang bertempat di
+        PT. GMF AeroAsia menjadi kelebihan saya. Skill lainnya saya terbaiasa
+        menggunakan framework Laravel dan Vue JS, Mampu bekerja baik secara
+        tim dan bisa juga bekerja sebagai individu.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skill Section -->
+  <div class="skill-section">
+    <h1 class="heading">skills</h1>
+    <div class="skills-container">
+      <div class="skill-card">
+        <img src="img/skill/php-logo.png" class="skill-img" alt="Laravel & CodeIgniter4" />
+        <div class="skill-level">88%</div>
+        <h1 class="skill-name">PHP</h1>
+      </div>
+      <div class="skill-card">
+        <img src="img/skill/javascript-logo.png" class="skill-img" alt="Vue & Angular" />
+        <div class="skill-level">80%</div>
+        <h1 class="skill-name">JavaScript</h1>
+      </div>
+      <div class="skill-card">
+        <img src="img/skill/rdbms-logo.png" class="skill-img" alt="MySQL, PostgreSQL & SQL Server" />
+        <div class="skill-level">73%</div>
+        <h1 class="skill-name">RDBMS</h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <section class="contact-section active" id="contact">
+    <form class="contact-form">
+      <input type="text" name="name" id="name" autocomplete="off" placeholder="name" />
+      <input type="text" name="email" id="email" autocomplete="off" placeholder="email" />
+      <textarea name="msg" id="msg" placeholder="message" autocomplete="off"></textarea>
+      <button type="submit" class="form-submit-btn">contact</button>
+    </form>
+    <!-- map -->
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.9978122130638!2d106.62891801456324!3d-6.130994761818562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a03cf1044bfd9%3A0xcab78cc6b99429e7!2sZaza%20Kos-Kosan!5e0!3m2!1sid!2sid!4v1668270790127!5m2!1sid!2sid"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
 </body>
+
+
 
 </html>

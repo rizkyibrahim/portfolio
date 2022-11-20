@@ -16,9 +16,12 @@
   <nav class="navbar">
     <ul class="link-group">
       <li class="link active"><a href="#">home</a></li>
-      <li class="link"><a href="#project">projects</a></li>
       <li class="link"><a href="#about">about</a></li>
-      <li class="link"><a href="#contact">contact</a></li>
+      <li class="link"><a href="#experience">Experience</a></li>
+      <li class="link"><a href="#education">Education</a></li>
+      <li class="link"><a href="#skills">Skills</a></li>
+      <li class="link"><a href="#contact">Contact</a></li>
+      <!-- <li class="link"><a href="#">Award </a></li> -->
     </ul>
   </nav>
 
@@ -31,6 +34,74 @@
     </h1>
     <img src="img/me/profile.jpg" class="home-img" alt="" />
   </section>
+
+  <!-- About Section -->
+  <section class="about-section active" id="about">
+    <div class="about">
+      <div class="about-img-container">
+        <img src="img/me/profile.jpg" class="about-img" alt="" />
+        <a href="file/CV.pdf" download="file.txt" class="download-cv-btn">Download CV</a>
+        <!-- <button type="button"  id="downloadCV">Download CV</button> -->
+      </div>
+      <p class="about-info">
+        Saya memiliki kemampuan Programming PHP dan Javascript. Memiliki Pengalaman
+        magang sebagai IT Support (Infra) di PT. Mega Finance dan saat ini saya bekerja sebagai
+        Web Programmer di PT. Jaya Teknologi International yang bertempat di
+        PT. GMF AeroAsia menjadi kelebihan saya. Skill lainnya saya terbiasa
+        menggunakan Framework Laravel dan Vue JS, Mampu bekerja baik secara
+        tim dan bisa juga bekerja sebagai individu.
+      </p>
+    </div>
+  </section>
+
+  <!-- Education and Experience Section -->
+  <div class="timeline-section active" id="experience">
+    <h1 class="heading">Experience and Education </h1>
+    <!-- Experience 1 -->
+    <div class="card">
+      <div class="card-body">
+        <h1 class="card-title">2019-2020</h1>
+        <h2 class="card-detail">PT. Mega Finance - IT Support</h2>
+        <h4 class="card-info">Melakukan pengecekan terhadap sebuah komputer, memastikan software bisa berjalan dengan
+          baik dan memastikan semua komputer sudah terhubung jaringan internet</h4>
+      </div>
+    </div>
+    <!-- Education 1 -->
+    <div class="card" id="education">
+      <div class="card-body">
+        <h1 class="card-title">2013-2016</h1>
+        <h2 class="card-detail">SMK Negeri 4 Kota Bekasi - TKJ</h2>
+        <h4 class="card-info">Belajar di jurusan Teknik Komputer dan Jaringan membuat saya mempunyai dasar-dasar sebagai
+          IT Support dan Web Developer</h4>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h1 class="card-title">2022-2022</h1>
+        <h2 class="card-detail">Bumame Farmasi - Customer Service</h2>
+        <h4 class="card-info">Membangun hubungan yang baik dengan pelanggan, melakukan penanganan terhadap
+          keluhan-keluhan yang disampaikan pelanggan dan memberikan saran dalam pembelian jasa</h4>
+      </div>
+    </div>
+    <!-- Education 2 -->
+    <div class="card">
+      <div class="card-body">
+        <h1 class="card-title">2016-2022</h1>
+        <h2 class="card-detail">Universitas Nusa Mandiri - Teknik Informatika</h2>
+        <h4 class="card-info">Kuliah dengan jurusan Teknik Informatika membuat saya memiliki pengetahuan lebih
+          tentang dunia Informatika yang membuat saya semakin tertarik menjadi Web Developer </h4>
+      </div>
+    </div>
+    <!-- Experience 3 -->
+    <div class="card">
+      <div class="card-body">
+        <h1 class="card-title">2022-Sekarang</h1>
+        <h2 class="card-detail">PT. Jaya Teknologi - Web Developer</h2>
+        <h4 class="card-info">Melakukan pengembangan website, melakukan perbaikan terhadap website yang sudah
+          ada, dan melakukan perbaikan terhadap website yang sudah ada </h4>
+      </div>
+    </div>
+  </div>
 
   <!-- Project Section -->
   <section class="project-section active">
@@ -52,7 +123,6 @@
             <button class="project-btn live" onclick="window.location.href='https://lpk-lkpindera.com/'">
               Live Project
             </button>
-            <!-- https://lpk-lkpindera.com/ -->
           </div>
         </div>
       </div>
@@ -78,55 +148,60 @@
     </div>
   </section>
 
-  <!-- About Section -->
-  <section class="about-section active" id="about">
-    <div class="about">
-      <div class="about-img-container">
-        <img src="img/me/profile.jpg" class="about-img" alt="" />
-        <button class="download-cv-btn">Download CV</button>
-      </div>
-      <p class="about-info">
-        Saya memiliki kemampuan Programming PHP dan Javascript. Memiliki Pengalaman
-        magang sebagai IT Support (Infra) di PT. Mega Finance dan
-        WebProgrammer di PT. Jaya Teknologi International yang bertempat di
-        PT. GMF AeroAsia menjadi kelebihan saya. Skill lainnya saya terbaiasa
-        menggunakan framework Laravel dan Vue JS, Mampu bekerja baik secara
-        tim dan bisa juga bekerja sebagai individu.
-      </p>
-    </div>
-  </section>
-
   <!-- Skill Section -->
-  <div class="skill-section">
+  <div class="skill-section active" id="skills">
     <h1 class="heading">skills</h1>
     <div class="skills-container">
       <div class="skill-card">
-        <img src="img/skill/php-logo.png" class="skill-img" alt="Laravel & CodeIgniter4" />
+        <img src="img/skill/php-logo.png" class="skill-img" />
         <div class="skill-level">88%</div>
         <h1 class="skill-name">PHP</h1>
       </div>
       <div class="skill-card">
-        <img src="img/skill/javascript-logo.png" class="skill-img" alt="Vue & Angular" />
+        <img src="img/skill/javascript-logo.png" class="skill-img" />
         <div class="skill-level">80%</div>
         <h1 class="skill-name">JavaScript</h1>
       </div>
       <div class="skill-card">
-        <img src="img/skill/rdbms-logo.png" class="skill-img" alt="MySQL, PostgreSQL & SQL Server" />
-        <div class="skill-level">73%</div>
-        <h1 class="skill-name">RDBMS</h1>
+        <img src="img/skill/ts-logo.png" class="skill-img" />
+        <div class="skill-level">65%</div>
+        <h1 class="skill-name">TypeScript</h1>
+      </div>
+      <div class="skill-card">
+        <img src="img/skill/vue-logo.png" class="skill-img" />
+        <div class="skill-level">90%</div>
+        <h1 class="skill-name">Vue</h1>
+      </div>
+      <div class="skill-card">
+        <img src="img/skill/react-logo.png" class="skill-img" />
+        <div class="skill-level">90%</div>
+        <h1 class="skill-name">React</h1>
+      </div>
+      <div class="skill-card">
+        <img src="img/skill/java-logo.png" class="skill-img" />
+        <div class="skill-level">55%</div>
+        <h1 class="skill-name">Java</h1>
       </div>
     </div>
   </div>
 
+  <!-- Interests Section -->
+  <!-- <div class="interests-section active" id="interests">
+    <div class="interests">
+      <h1 class="heading">Interests </h1>
+      <h1 class="interest-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, eaque deserunt?
+        Delectus impedit
+        obcaecati, magni sequi quasi voluptatum soluta nisi voluptas dolore, id architecto? Soluta?</h1>
+    </div>
+  </div> -->
   <!-- Contact Section -->
   <section class="contact-section active" id="contact">
-    <form class="contact-form">
+    <form action="sendmail.php" method="POST" class="contact-form">
       <input type="text" name="name" id="name" autocomplete="off" placeholder="name" />
       <input type="text" name="email" id="email" autocomplete="off" placeholder="email" />
-      <textarea name="msg" id="msg" placeholder="message" autocomplete="off"></textarea>
+      <textarea name="message" id="message" placeholder="message" autocomplete="off"></textarea>
       <button type="submit" class="form-submit-btn">contact</button>
     </form>
-    <!-- map -->
     <div class="map">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.9978122130638!2d106.62891801456324!3d-6.130994761818562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a03cf1044bfd9%3A0xcab78cc6b99429e7!2sZaza%20Kos-Kosan!5e0!3m2!1sid!2sid!4v1668270790127!5m2!1sid!2sid"
@@ -134,8 +209,8 @@
         referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </section>
+
+
 </body>
-
-
 
 </html>
